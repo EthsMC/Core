@@ -1,0 +1,9 @@
+name: Core
+version: 0.1
+main: me.eths.CorePlugin
+api-version: 1.8.8
+author: Eths
+commands:
+  ban:
+    usage: /ban
+    permission: core.ban
