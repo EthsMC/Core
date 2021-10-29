@@ -1,6 +1,19 @@
+Chat-Format: "%prefix%%player%%suffix%&7: &f%message%"
 Ranks:
+  Owner:
+    prefix: "&8[&4Owner&8] &4"
+    suffix: "&4"
+    color: "&4"
+    permissions:
+      - example.permission
+  Admin:
+    prefix: "&8[&cAdmin&8] &c"
+    suffix: "&c"
+    color: "&c"
+    permissions:
+      - example.permission
   None:
-    prefix: "&7"
+    prefix: "&7[&fNone&7] &f"
     suffix: "&7"
     color: "&7"
     permissions:

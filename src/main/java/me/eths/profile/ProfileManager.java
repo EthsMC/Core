@@ -1,18 +1,22 @@
 package me.eths.profile;
 
+import lombok.Getter;
+import me.eths.CorePlugin;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
 
 import java.util.HashMap;
 
-public class ProfileManager {
+@Getter
+public class ProfileManager implements Listener {
 
     public HashMap<Player, Profile> profiles;
 
     public ProfileManager() {
         profiles = new HashMap<>();
     }
-
 
     public Profile fetch(String uuid) {
         if (profiles.containsKey(Bukkit.getPlayer(uuid))) return fetchOnline(uuid);
